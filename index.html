@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Drumasters</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -26,19 +26,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+                <a class="nav-link" href="#aboutUs">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">TECHNOLOGIES</a>
+                <a class="nav-link" href="#technologies">TECHNOLOGIES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PORTFOLIO</a>
+                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTS</a>
+                <a class="nav-link" href="#contacts">CONTACTS</a>
               </li>
               <li class="nav-item hire-us-button">
-                <a class="nav-link" href="#">HIRE US</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#contactUsModal">HIRE US</a>
               </li>
             </ul>
           </div>
@@ -66,7 +66,7 @@
       </div>
     </div>
     <!-- 2 -->
-    <div class="about-us-section">
+    <div class="about-us-section" id="aboutUs">
       <div class="container">
         <div class="info">
           <p class="headline">We are <span>drupal</span> masters</p>
@@ -105,7 +105,7 @@
       </div>
     </div>
     <!-- 3 -->
-    <div class="technologies-section">
+    <div class="technologies-section" id="technologies">
       <div class="container">
         <div class="info">
           <p class="headline">Technology <span>stack</span></p>
@@ -148,7 +148,7 @@
       </div>
     </div>
     <!-- 4 -->
-    <div class="portfolio-section">
+    <div class="portfolio-section" id="portfolio">
       <div class="container">
         <div class="d-none d-md-block">
           <div class="carousel-controls">
@@ -210,7 +210,7 @@
       </div>
     </div>
     <!-- 5 -->
-    <div class="contact-section">
+    <div class="contact-section" id="contacts">
       <div class="headline-wrapper">
         <p class="headline">Contact <span>us</span></p>
       </div>
@@ -244,7 +244,7 @@
     </div>
   </div>
   <!-- modal -->
-  <div class="custom-modal modal" id="contactUsModal" role="dialog" aria-labelledby="contactUsModalLabel" aria-hidden="true" data-backdrop="static"  data-backdrop="true">
+  <div class="custom-modal modal" id="contactUsModal" role="dialog" aria-labelledby="contactUsModalLabel" aria-hidden="true" data-backdrop="static" data-backdrop="true">
     <div class='modal-controls'>  
       <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close"></button>
       <button type="button" class="close d-block d-sm-none" data-dismiss="modal" aria-label="Close">
@@ -274,6 +274,4 @@
     </div>
   </div>
 </body>
-<script>
-</script>
 </html>

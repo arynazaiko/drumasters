@@ -33,6 +33,12 @@ body.modal-open .background-container {
   margin-bottom: 30px;
 }
 
+.text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .main-section {
   position: relative;
   height: 770px;
@@ -154,12 +160,6 @@ body.modal-open .background-container {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-.text {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-style: normal;
 }
 
 .main-section .container .info .lower-text p {
@@ -302,25 +302,8 @@ body.modal-open .background-container {
   bottom: 0;
 }
 
-.portfolio-section .carousel .carousel-item {
-  position: relative;
-  background-size: cover; 
-}
-
 .portfolio-section .carousel .carousel-item img {
   width: 100%;
-}
-
-.portfolio-section .carousel .carousel-item:nth-child(1) {
-  /* background-image: url('../img/browser.png'); */
-}
-
-.portfolio-section .carousel .carousel-item:nth-child(2) {
-  /* background-image: url('../img/browser.png'); */
-}
-
-.portfolio-section .carousel .carousel-item:nth-child(3) {
-  /* background-image: url('../img/browser.png'); */
 }
 
 .portfolio-section .carousel .carousel-item .browser-text {
@@ -349,7 +332,6 @@ body.modal-open .background-container {
   border-bottom: 1px solid #ff0078;
   padding-bottom: 1px;
 }
-
 
 /*5 */
 
@@ -430,6 +412,7 @@ body.modal-open .background-container {
 }
 
 /* ///////////////////modal window//////////////////// */
+
 .custom-modal .modal-controls button {
   position: absolute;
   height: 48px;
@@ -454,7 +437,6 @@ body.modal-open .background-container {
 .custom-modal .modal-controls .close:first-child:hover {
   background-image: url('../img/close_hover.png');
 }
-
 
 .modal-backdrop.show {
   background-color: #dfdfdf;
@@ -481,7 +463,6 @@ body.modal-open .background-container {
   box-shadow: none;
   border-bottom: 2px solid rgb(255, 0, 120);
 }
-
 
 .border {
   position: absolute;
@@ -534,8 +515,6 @@ body.modal-open .background-container {
   color: rgb(255, 255, 255);
   letter-spacing: 3px;
 }
-
-
 
 
 @media (min-width: 1200px) {
