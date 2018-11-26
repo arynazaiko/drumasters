@@ -29,6 +29,10 @@ body.modal-open .background-container {
   font-style: italic;
 }
 
+.small-header {
+  margin-bottom: 30px;
+}
+
 .main-section {
   position: relative;
   height: 770px;
@@ -232,7 +236,6 @@ body.modal-open .background-container {
   font-weight: 900;
   font-style: normal;
   color: rgba(255, 255, 255, 0.502);
-  margin-bottom: 30px;
 }
 
 .technologies-section .container .info .row .left-col p {
@@ -324,6 +327,7 @@ body.modal-open .background-container {
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   left: 0;
@@ -333,7 +337,6 @@ body.modal-open .background-container {
 .portfolio-section .carousel .carousel-item .row .small-header {
   font-size: 24px;
   color: rgb(255, 255, 255);
-  margin-bottom: 30px;
 }
 
 .portfolio-section .carousel .carousel-item .row .text {
@@ -356,11 +359,15 @@ body.modal-open .background-container {
   background-color: #ffffff;
 }
 
-.contact-section .headline {
+.contact-section .headline-wrapper {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 145px;
-  left: 50%;  
-  transform: translateX(-50%);
+  width: 100%;
+}
+
+.contact-section .headline {
   padding: 15px;
   line-height: 1;
   background-color: rgb(255, 255, 255);
@@ -374,6 +381,13 @@ body.modal-open .background-container {
 
 .contact-section .row {
   height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-section .row > div{
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .contact-section .map {
@@ -416,18 +430,28 @@ body.modal-open .background-container {
 }
 
 /* ///////////////////modal window//////////////////// */
-.custom-modal .close {
+.custom-modal .modal-controls button {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  outline: none;
+  z-index: 999;
+}
+
+.custom-modal .modal-controls .close:first-child {
   position: absolute;
   right: 40px;
   top: 40px;
-  height: 48px;
-  width: 48px;
   background-image: url('../img/close.png');
-  max-height: 48px;
-  outline: none;
 }
 
-.custom-modal .close:hover {
+.custom-modal .modal-controls .close:last-child {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.custom-modal .modal-controls .close:first-child:hover {
   background-image: url('../img/close_hover.png');
 }
 
@@ -572,7 +596,7 @@ body.modal-open .background-container {
     height: auto;
   }
 
-  .contact-section .headline {
+  .contact-section .headline-wrapper {
     top: 20px;
   }
 
@@ -582,28 +606,30 @@ body.modal-open .background-container {
 }
 
 @media (max-width: 767px) {
-
- /* .headline {
-    margin-bottom: 30px;
-  } */
-
-  .about-us-section .container .info .right-col {
-    text-align: left;
+  .small-header {
+    margin-bottom: 10px;
   }
 
-  .about-us-section .container .info .right-col img {
-    /* float: right; */
-    height: 60px;
+  .technologies-section .container .info .row .left-col p {
+    margin-bottom: 40px;
   }
 
+  .portfolio-section .carousel .carousel-item .browser-text {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 575px) {
-  /* .headline {
-    font-size: 40px;
-  } */
-  
-  .text {
-    /* font-size: 16px; */
+  .headline {
+    font-size: 32px;
+  }
+
+  .main-section .container .info .upper-text .headline span:before {
+    left: -18px;
+    top: -18px;
+  }
+
+  .custom-modal input {
+    width: 100%;
   }
 }
